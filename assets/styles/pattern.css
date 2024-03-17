@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --blue-theme: #0a172a;
+    --blue-header: #020f23;
+    --blue-selection: #152f56;
+    --blue-text: #dcf2fa;
+    --white-text: whitesmoke;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0 0.725rem;
+    background-color: var(--blue-theme);
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    text-align: center;
+    text-shadow: 0 0 4px var(--blue-header);
+    color: var(--blue-text);
+}
+
+button {
+    border: none;
+}
+
+a {
+    color: var(--blue-text);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.p-5px-h {
+    padding: 0 5px;
+}
+
+#selected__general-page {
+    font-weight: 700;
+    background-color: var(--blue-selection);
+}
+
+#selected__especific-page {
+    border-bottom: 1px solid var(--blue-text);
+}
+
+.img__preview {
+    width: 500px;
+    height: auto;
+}
+
+.span-page:hover {
+    text-decoration: underline;
+}

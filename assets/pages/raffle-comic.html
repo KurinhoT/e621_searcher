@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E6 Comic Searcher</title>
+        <link rel="shortcut icon" href="../images/e6-logo.png" type="image/x-icon" >
+        
+        <link rel="stylesheet" href="../styles/header.css" >
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/pattern.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" >
+    </head>
+    <body>
+        <header>
+            <a href="" target="_blank" rel="noopener noreferrer" id="logo">
+                <img src="../images/e6-logo.png" alt="e6-logo">
+            </a>
+            <nav>
+                <div>
+                    <ul id="ul__main">
+                        <li id="selected__general-page"> <a href="../../index.html">Home</a> </li>
+                        <li> <span id="raffle__color">Sortear Cor</span> </li>
+                        <li> <a href="https://github.com/KurinhoT" target="_blank">Contato</a> </li>
+                        <li> <a href="https://e621.net" target="_blank">e621</a> </li>
+                    </ul>
+                    <ul id="ul__secondary">
+                        <li> <a href="raffle-page.html" > Sortear Página </a> </li>
+                        <li> <a href="raffle-post.html" > Sortear Post </a> </li>
+                        <li> <a href="#" id="selected__especific-page"> Sortear Comic </a> </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <h1 style="text-decoration: underline;">Sortear Comic Aleatória</h1>
+
+            <h3> Clique no botão abaixo para sortear uma comic aleatória </h3>
+
+            <br>
+
+            <button type="button" class="main__btn" >
+                Sortear comic
+            </button>
+            
+            <span id="raffle__link" >
+                <a href="" target="_blank"></a>
+            </span>
+            
+        </main>
+
+        <script src="../../js/raffle-color.js"></script>
+        <script src="../../js/raffle-comic.js"></script>
+    </body>
+</html>
