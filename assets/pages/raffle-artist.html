@@ -4,14 +4,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>E6 Comic Searcher</title>
+        <title>E6 Post Searcher</title>
         <link rel="shortcut icon" href="../images/e6-logo.png" type="image/x-icon" >
         
         <link rel="stylesheet" href="../styles/header.css" >
         <link rel="stylesheet" href="../styles/main.css">
         <link rel="stylesheet" href="../styles/pattern.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" >
     </head>
-
+    
     <body>
         <header>
             <a href="https://e621.net" target="_blank" rel="noopener noreferrer" id="logo">
@@ -27,32 +28,32 @@
                     </ul>
                     <ul id="ul__secondary">
                         <li> <a href="raffle-page.html" > Sortear Página </a> </li>
-                        <li> <a href="raffle-post.html" > Sortear Post </a> </li>
-                        <li> <a href="#" id="selected__especific-page"> Sortear Comic </a> </li>
-                        <li> <a href="raffle-artist.html" > Sortear Artista </a> </li>
+                        <li> <a href="raffle-post.html"> Sortear Post </a> </li>
+                        <li> <a href="raffle-comic.html"> Sortear Comic </a> </li>
+                        <li> <a href="#" id="selected__especific-page" > Sortear Artista </a> </li>
                     </ul>
                 </div>
             </nav>
         </header>
 
         <main>
-            <h1 style="text-decoration: underline;">Sortear Comic Aleatória</h1>
+            <h1 style="text-decoration: underline;">Sortear Artista Aleatório</h1>
 
-            <h3> Clique no botão abaixo para sortear uma comic aleatória </h3>
+            <h3> Clique no botão abaixo para sortear um artista aleatório </h3>
 
             <div id="main__options">
                 <button type="button" class="main__btn" >
-                    Sortear comic
-                </button>
+                    Sortear artista
+                </button>    
             </div>
             
-            <a id="raffle__link" href="" target="_blank">
+            <a id="raffle__link" href="" target="_blank" >
                 <span class="span-page"></span>
             </a>
             
         </main>
 
+        <script src="../../js/raffle-artist.js"></script>
         <script src="../../js/raffle-color.js"></script>
-        <script src="../../js/raffle-comic.js"></script>
     </body>
 </html>
