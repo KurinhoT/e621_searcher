@@ -45,11 +45,11 @@ nav div #ul__main li a, #raffle__color {
     font-size: 11pt;
 }
 
-nav div ul li a:hover, #raffle__color:hover {
+nav div ul li span:hover, #raffle__color:hover {
     text-shadow: 0 0 3px var(--white-text);
 }
 
-#raffle__color {
+#raffle__color, #ul__secondary span {
     cursor: pointer;
 }
 

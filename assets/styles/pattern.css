@@ -63,7 +63,7 @@ a {
     background-color: var(--blue-selection);
 }
 
-#selected__especific-page {
+.selected__especific-page {
     border-bottom: 1px solid var(--blue-text);
 }
 
