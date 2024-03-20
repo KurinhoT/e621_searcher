@@ -42,9 +42,3 @@ main {
 #raffle__link a {
     color: var(--blue-text);
 }
-
-.main__btn:hover {
-    cursor: pointer;
-    background-color: var(--blue-text);
-    color: var(--blue-selection);
-}

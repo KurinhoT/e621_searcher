@@ -4,7 +4,8 @@
     --blue-theme: #0a172a;
     --blue-header: #020f23;
     --blue-selection: #152f56;
-    --blue-text: #dcf2fa;
+    --blue-text-light: #e9f2f0;
+    --blue-text: #9ebfd8;
     --white-text: whitesmoke;
 }
 
@@ -59,19 +60,12 @@ a {
 }
 
 #selected__general-page {
-    font-weight: 700;
+    font-weight: 800;
+    font-style: italic;
     background-color: var(--blue-selection);
-}
-
-.selected__especific-page {
-    border-bottom: 1px solid var(--blue-text);
 }
 
 .img__preview {
     width: 500px;
     height: 200px;
-}
-
-.span-page:hover {
-    text-decoration: underline;
 }

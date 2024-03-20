@@ -17,8 +17,6 @@ header {
 nav {
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 nav div {
@@ -32,8 +30,6 @@ nav div #ul__main {
     width: 100%;
     height: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 nav div #ul__main li {
@@ -45,10 +41,6 @@ nav div #ul__main li a, #raffle__color {
     font-size: 11pt;
 }
 
-nav div ul li span:hover, #raffle__color:hover {
-    text-shadow: 0 0 3px var(--white-text);
-}
-
 #raffle__color, #ul__secondary span {
     cursor: pointer;
 }
@@ -58,10 +50,9 @@ nav div ul li span:hover, #raffle__color:hover {
     height: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 5rem;
+    gap: 2rem;
     padding: .4rem 1.25rem;
-    border-radius: 10px;
+    border-radius: 0 10px 10px 10px;
     font-size: 10pt;
     background-color: var(--blue-selection);
     color: var(--blue-text);

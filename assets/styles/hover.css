@@ -1,0 +1,16 @@
+.span-page:hover, .contact__img a:hover {
+    text-decoration: underline;
+}
+
+#ul__main li a:hover,
+#ul__main li span:hover,
+#ul__secondary li:hover,
+.contact__img a:hover {
+    color: var(--blue-text-light);
+}
+
+.main__btn:hover {
+    cursor: pointer;
+    background-color: var(--blue-text);
+    color: var(--blue-selection);
+}
