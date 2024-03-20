@@ -5,41 +5,41 @@ const buttons = {
 };
 
 const infos = {
-    links: {
-        twitterLink: {
-            kuro: "https://twitter.com/kurotraducoes",
-            agenolho: "https://twitter.com/shordreno"
-        },
-        githubLink: {
-            kuro: "https://github.com/KurinhoT",
-            agenolho: ""
-        }
-    },
+    links: [
+        [
+            "https://twitter.com/kurotraducoes",
+            "https://twitter.com/shordreno"
+        ],
 
-    imgs: {
-        twitterPfp: {
-            kuro: "../images/kuro-twitter-pfp.jpg",
-            agenolho: "../images/agenolho-twitter-pfp.jpg"
-        },
-        githubPfp: {
-            kuro: "../images/kuro-github-pfp.png",
-            agenolho: ""
-        }
-    },
+        [
+            "https://github.com/KurinhoT"
+        ]
+    ],
 
-    profiles: {
-        twitterProfile: {
-            kuro: "kurotraducoes",
-            agenolho: "shordreno"
-        },
-        githubProfile: {
-            kuro: "KurinhoT",
-            agenolho: ""
-        }
-    }
+    imgs: [
+        [
+            "../images/kuro-twitter-pfp.jpg",
+            "../images/agenolho-twitter-pfp.jpg"
+        ],
+
+        [
+            "../images/kuro-github-pfp.png"
+        ]
+    ],
+
+    profiles: [
+        [
+            "kurotraducoes",
+            "shordreno"
+        ],
+
+        [
+            "KurinhoT",
+        ]
+    ]
 };
 
-const funcContact = (contactType, search1, search2, img1, img2, profile1, profile2) => {
+const funcContact = (contactType, img1, search1, profile1, img2, search2, profile2) => {
     contactType.forEach(button => {
         button.addEventListener('click', async () => {
             main.innerHTML = `
@@ -47,8 +47,8 @@ const funcContact = (contactType, search1, search2, img1, img2, profile1, profil
                 <div class="contact__specific">
                     <h1>Kuro</h1>
                     <div class="contact__img">
-                        <img src="${img1.kuro}" alt="" srcset="">
-                        <a href="${search1.kuro}" target="_blank" rel="noopener noreferrer">${profile1.kuro}</a>
+                        <img src="${img1}" alt="" srcset="">
+                        <a href="${search1}" target="_blank" rel="noopener noreferrer">${profile1}</a>
                     </div>
                 </div>
 
@@ -57,8 +57,8 @@ const funcContact = (contactType, search1, search2, img1, img2, profile1, profil
                 <div class="contact__specific">
                     <h1>Agenolho</h1>
                     <div class="contact__img">
-                        <img src="${img2.agenolho}" alt="" srcset="">
-                        <a href="${search2.agenolho}" target="_blank" rel="noopener noreferrer">${profile2.agenolho}</a>
+                        <img src="${img2}" alt="" srcset="">
+                        <a href="${search2}" target="_blank" rel="noopener noreferrer">${profile2}</a>
                     </div>
                 </div>
             </div>
@@ -67,5 +67,5 @@ const funcContact = (contactType, search1, search2, img1, img2, profile1, profil
     });
 };
 
-funcContact(buttons.twitter, infos.links.twitterLink, infos.links.twitterLink, infos.imgs.twitterPfp, infos.imgs.twitterPfp, infos.profiles.twitterProfile, infos.profiles.twitterProfile);
-funcContact(buttons.github, infos.links.githubLink, infos.links.githubLink, infos.imgs.githubPfp, infos.imgs.githubPfp, infos.profiles.githubProfile, infos.profiles.githubProfile);
+funcContact(buttons.twitter, infos.imgs[0][0], infos.links[0][0], infos.profiles[0][0], infos.imgs[0][1], infos.links[0][1], infos.profiles[0][1]);
+funcContact(buttons.github, infos.imgs[1][0], infos.links[1][0], infos.profiles[1][0], null, null, "");
