@@ -41,7 +41,7 @@ const infos = {
 
 const funcContact = (contactType, img1, search1, profile1, img2, search2, profile2) => {
     contactType.forEach(button => {
-        button.addEventListener('click', async () => {
+        button.addEventListener('click', () => {
             main.innerHTML = `
             <div id="contacts">
                 <div class="contact__specific">

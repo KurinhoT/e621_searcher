@@ -35,7 +35,21 @@ const funcRaffle = (raffleType, generateLinkText, searchType, maxNum) => {
                 } else {
                     raffleLink.setAttribute('href', `https://e621.net/${searchType}/${randomNum}`);
                 }
+
+                // fetch(`https://e621.net/${searchType}/${randomNum}.json`)
+                //     .then(async (res) => {
+                //         if (!res.ok) {
+                //             throw new Error(`${generateLinkText} não foi encontrado. Código de erro ${res.status}`);
+                //         }
+                //         return await res.json();
+                //     })
+                //     .then(data => {
+                //         console.log(data);
+                //         return data;
+                //     })
+                //     .catch(error => console.log(error))
                 
+                // raffleLink.setAttribute('href', `${data.posts.file.url}`);
                 spanPage.innerText = `${generateLinkText} número ${randomNum}`;
                 spanPage.classList.add('p-5px-h');
             });
